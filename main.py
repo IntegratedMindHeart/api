@@ -5,8 +5,8 @@ import pickle
 from flask import Flask
 app = Flask(__name__)
 
-@app.route('/api/<string:movie>')
-def pred(movie):
+@app.route('/api/recommendation/<string:movie>')
+def get_recommendation(movie):
     df=pd.read_csv('find_index.csv')
     index=df[df['movie_title'] == movie]["index"].values[0]
 
@@ -35,6 +35,14 @@ def pred(movie):
     return jsonify({'similar_movies':l})
 
 
+@app.route('/api/review/<string:review>')
+def get_review(review):
+    count_vectorizer=pickle.load(open("count_vectorizer",'rb'))
+    model_clf=pickle.load(open("model_clf" ,'rb'))
+    test=pd.Series(review)
+    vector=count_vectorizer.transform(test)
+    result=int(model_clf.predict(vector)[0])
+    return jsonify({'result':result})
 
 if __name__ == "__main__":
     app.run(debug=True)
