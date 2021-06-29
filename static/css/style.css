@@ -1,0 +1,43 @@
+.text-responsive {
+  font-size: calc(100% + 1vw + 1vh);
+  font-family: "Rubik", sans-serif;
+}
+
+.trans{
+  background-color: rgba(225, 0, 0, 0.3);
+}
+
+.trans2{
+  background-color: #1d1d1dc9;
+}
+
+.bg {
+  background-image: url("../images/background.jpg");
+  height: 100%;
+  background-color: rgb(139, 33, 33);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-cast {
+  background-image: url("../images/cast-background.jpg");
+  height: 100%;
+  background-color: rgb(17, 10, 10);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card, table tr td, table tr th{
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.astext {
+  background:none;
+  border:none;
+  margin:0;
+  padding:0;
+  cursor: pointer;
+  color: blue;
+}

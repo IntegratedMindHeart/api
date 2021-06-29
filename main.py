@@ -1,9 +1,13 @@
-from flask import Flask, jsonify
+from flask import Flask,render_template,jsonify
 import pandas as pd
 import pickle
 
 from flask import Flask
 app = Flask(__name__)
+
+@app.route('/')
+def api_help():
+    return render_template('index.html')
 
 @app.route('/api/recommendation/<string:movie>')
 def get_recommendation(movie):

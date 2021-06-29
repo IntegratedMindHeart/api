@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container pt-4">
+    <div class="row text-center py-4">
+        <div class="alert alert-danger h2" role="alert">
+            How to use movie recommendation API
+        </div>
+    </div>
+    <div class="row pb-5">
+        <div class="col-md-4 col-sm-12 text-center my-2">
+            <img width="320px" class="border rounded shadow-lg" src="{{url_for('static',filename='images/recommendation.png')}}" alt="recommendation">
+        </div>
+        <div class="col-md-8 col-sm-12 my-2 trans p-3 border rounded shadow-lg text-light text-break">
+            <h1>Send GET request -</h1>
+            <h4>https://hollywoodrcom.herokuapp.com/api/recommendation/{<i>movie_name</i>}</h4>
+            <h5>where, movie_name your movie name</h5>
+            <br>
+            <h1>Example -</h1>
+            <a href="https://hollywoodrcom.herokuapp.com/api/recommendation/avatar" target="_blank" class="h4">https://hollywoodrcom.herokuapp.com/api/recommendation/avatar</a>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row text-center py-4">
+        <div class="alert alert-danger h2" role="alert">
+            How to use movie review sentiment analysis API
+        </div>
+    </div>
+    <div class="row pb-5">
+        <div class="col-md-4 col-sm-12 text-center my-2">
+            <img width="320px" class="border rounded shadow-lg" src="{{url_for('static',filename='images/review.png')}}" alt="recommendation">
+        </div>
+        <div class="col-md-8 col-sm-12 my-2 trans p-3 border rounded shadow-lg text-light text-break">
+            <h1>Send GET request -</h1>
+            <h4>https://hollywoodrcom.herokuapp.com/api/review/{<i>movie_review</i>}</h4>
+            <h5>where, movie_review your movie review</h5>
+            <br>
+            <h1>Example -</h1>
+            <a href="https://hollywoodrcom.herokuapp.com/api/review/good" target="_blank" class="h4">https://hollywoodrcom.herokuapp.com/api/review/good</a>
+        </div>
+    </div>
+</div>
+{% endblock content %}
