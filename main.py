@@ -33,7 +33,7 @@ def get_recommendation(movie):
             continue
         l.append(m)
         i=i+1
-        if i>16:
+        if i>15:
             break
         
     return jsonify({'similar_movies':l[1:]})
