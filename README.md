@@ -1,5 +1,6 @@
 # api
-We had create this api using flask which help our user to create movie recommendation system and sentiment analysis. This api can be used  by any developer who want to create movie recommendation system for their application he/she will just need to call our api.
+We have created this API using a flask that helps our users to create movie recommendation systems and sentiment analysis. This API can be used by any developer who wants to create a movie recommendation system for their application he/she will just need to call our API.
+
 
 ## See Project
 
