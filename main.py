@@ -33,10 +33,10 @@ def get_recommendation(movie):
             continue
         l.append(m)
         i=i+1
-        if i>15:
+        if i>16:
             break
         
-    return jsonify({'similar_movies':l})
+    return jsonify({'similar_movies':l[1:]})
 
 
 @app.route('/api/review/<string:review>')
