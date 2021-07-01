@@ -1,4 +1,4 @@
-# api
+# Project Red Mind API
 We have created this API using a flask that helps our users to create movie recommendation systems and sentiment analysis. This API can be used by any developer who wants to create a movie recommendation system for their application he/she will just need to call our API.
 
 
