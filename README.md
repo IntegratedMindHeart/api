@@ -19,3 +19,5 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install all pyt
 3. Run the command *python main.py*
 
 4. Open your browser and open url http://127.0.0.1:5000/
+
+#### Demo Video - https://youtu.be/3-Ko3rMPN38
